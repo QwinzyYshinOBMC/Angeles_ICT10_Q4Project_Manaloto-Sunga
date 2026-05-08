@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <title>classmates</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #EDE7B1;
+            color: #495057;
+        }
+
+        header {
+            background-color: #E4C1F9;
+            color: white;
+            padding: 24px 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .class_name {
+            font-family: 'Playfair Display', serif;
+            font-size: 26px;
+            font-weight: bold;
+            font-style: italic;
+            color: #ffffff;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 1px;
+            padding: 8px 12px;
+            border-radius: 10px;
+        }
+
+        .content-wrapper {
+            display: flex;
+            justify-content: center;
+            padding: 60px 20px;
+        }
+
+        .emerald-box {
+            background: #ffffff;
+            padding: 50px 40px;
+            width: 100%;
+            max-width: 500px; 
+            margin: auto;
+            border: 1px solid #ced4da; 
+            border-radius: 20px;
+            border-left: 2px solid #E4C1F9; 
+        }
+
+        .header-title {
+            font-family: 'Playfair Display', serif;
+            color: #F694C1;
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: 700;
+            font-size: 32px;
+            font-style: italic;
+        }
+
+        .field-label {
+            font-size: 13px;
+            font-weight: bold;
+            color: #495057; 
+            display: block;
+            margin-top: 20px;
+            text-transform: uppercase;
+        }
+
+        .emerald-input {
+            width: 100%;
+            padding: 15px; 
+            margin: 10px 0px;
+            border: 2px solid #D3F8E2; 
+            border-radius: 12px;
+            box-sizing: border-box;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 15px;
+            background-color: #f8f9fa; 
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            background: #E4C1F9; 
+            color: #ffffff;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 30px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .display-section {
+            margin-top: 50px;
+            border-top: 2px dashed #D3F8E2;
+            padding-top: 30px;
+        }
+
+        .list-header {
+            font-family: 'Playfair Display', serif;
+            color: #E4C1F9; 
+            font-size: 24px;
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+
+        .classmate-item {
+            padding: 18px; 
+            margin: 12px 0px;
+            font-size: 15px;
+            color: #495057;
+            font-family: 'Quicksand', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="class_name">10 - Emerald</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">classmates</a></li>
+                <li><a href="attendancesheet.html">attendance tracker</a></li>
+                <li><a href="gallery.html">gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="emerald-box">
+            <h2 class="header-title">Emerald Class System</h2>
+            
+            <label class="field-label">Name:</label>
+            <input type="text" id="name" class="emerald-input">
+            
+            <label class="field-label">Section:</label>
+            <input type="text" id="section" class="emerald-input">
+            
+            <label class="field-label">Favorite Subject:</label>
+            <input type="text" id="subject" class="emerald-input">
+            
+            <button class="submit-btn" py-click="classmate">Add Classmate</button>
+            
+            <div class="display-section">
+                <h2 class="list-header">The Classmates</h2>
+                <div id="listcontainer"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="py" src="main.py"></script>
+</body>
+</html>

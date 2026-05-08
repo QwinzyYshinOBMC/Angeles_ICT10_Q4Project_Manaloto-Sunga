@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #EDE7B1; 
+            color: #495057;
+            letter-spacing: 0.5px;
+        }
+
+        header {
+            background-color: #E4C1F9;
+            color: white;
+            padding: 24px 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .class_name {
+            font-family: 'Playfair Display', serif;
+            font-size: 26px;
+            font-weight: bold;
+            font-style: italic;
+            color: #ffffff;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 1px;
+            padding: 8px 12px;
+            border-radius: 10px;
+            text-transform: lowercase;
+        }
+
+        .main-content {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: #F694C1; 
+            text-align: center;
+            margin-bottom: 50px;
+            font-weight: 700;
+            font-size: 36px;
+            font-style: italic;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            gap: 40px;
+        }
+
+        .gallery-card {
+            background: #ffffff;
+            border: 1px solid #ced4da;
+            border-radius: 20px;
+            border-left: 3px solid #E4C1F9; 
+            overflow: hidden;
+        }
+
+        .gallery-card img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            display: block;
+            background-color: #f8f9fa;
+        }
+
+        .card-info {
+            padding: 30px;
+        }
+
+        .card-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            font-weight: bold;
+            color: #F694C1;
+            margin-bottom: 10px;
+        }
+
+        .card-desc {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 16px;
+            color: #495057;
+            line-height: 1.5;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="class_name">10 - Emerald</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">classmates</a></li>
+                <li><a href="attendancesheet.html">attendance tracker</a></li>
+                <li><a href="gallery.html">gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <h1>Highlights of Our 10-Emerald Journey</h1>
+
+        <div class="gallery-grid">
+            <div class="gallery-card">
+                <img src="bb868fc3-9203-4c3d-a848-dfe0f97d6284.webp">
+                <div class="card-info">
+                    <div class="card-title">Intramurals SY 2025-2026</div>
+                    <div class="card-desc">Champs!</div>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <img src="minimart.jfif">
+                <div class="card-info">
+                    <div class="card-title">Minimart SY 2025-2026</div>
+                    <div class="card-desc">Ate many good food and sold many good food!</div>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <img src="5b37d41d-6e78-4e23-9ddb-a636522d0364.jfif">
+                <div class="card-info">
+                    <div class="card-title">JCO SY 2025-2026</div>
+                    <div class="card-desc">So fun but tiringg</div>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <img src="635059790_1462777765457586_5830131403591995101_n.jpg">
+                <div class="card-info">
+                    <div class="card-title">10 emeralddd!</div>
+                    <div class="card-desc">Love this class so muchh <3</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
